@@ -1,0 +1,32 @@
+baseURL = "https://example.org/"
+languageCode = "zh-CN"
+timeZone = "Asia/Shanghai"
+
+title = "xxx"
+theme = "hugo-bearblog"
+
+[params]
+  description = "xxxxxxx"
+  dateFormat = "2006-01-02"
+  hideMadeWithLine = true
+
+  
+[[menus.main]]
+  name = "生活"
+  pageRef = "/categories/生活"
+  weight = 10
+
+[[menus.main]]
+  name = "电影"
+  pageRef = "/categories/电影"
+  weight = 20
+
+[[menus.main]]
+  name = "读书"
+  pageRef = "/categories/读书"
+  weight = 30
+
+  [[menus.main]]
+  name = "网球"
+  pageRef = "/categories/网球"
+  weight = 40

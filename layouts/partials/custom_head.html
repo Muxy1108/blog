@@ -1,0 +1,44 @@
+
+<style>
+  :root {
+    /* 等宽字体 */
+    --font-main: ui-monospace, Consolas,
+      "Liberation Mono", monospace;
+    --font-secondary: var(--font-main);
+
+    --width: 720px;
+    --font-scale: 17px;
+
+    /* 日间：冰川雾白 */
+    --background-color: #E9F1F4;
+    --heading-color: #20323C;
+    --text-color: #334A56;
+    --link-color: #286C86;
+    --visited-color: #286C86;
+    --blockquote-color: #617883;
+  }
+
+  /* 夜间：石墨蓝灰 */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #252E39;
+      --heading-color: #F4F6F9;
+      --text-color: #DAE0E9;
+      --link-color: #A0B9DA;
+      --visited-color: #A0B9DA;
+      --blockquote-color: #A4B0BE;
+    }
+  }
+
+  body {
+    line-height: 1.85;
+  }
+
+  /* 首行缩进 */
+  main p {
+      text-indent: 2em;
+      line-height: 1.9;
+      margin-bottom: 0.8em;
+  }
+
+</style>
