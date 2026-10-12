@@ -2,7 +2,7 @@ baseURL = "https://Muxy1108.github.io/blog/"
 languageCode = "zh-CN"
 timeZone = "Asia/Shanghai"
 
-title = "xxx"
+title = "Muxy的一些随笔"
 theme = "hugo-bearblog"
 
 [params]
@@ -13,20 +13,20 @@ theme = "hugo-bearblog"
   
 [[menus.main]]
   name = "生活"
-  pageRef = "/categories/生活"
+  pageRef = "/categories/life"
   weight = 10
 
 [[menus.main]]
   name = "电影"
-  pageRef = "/categories/电影"
+  pageRef = "/categories/movies"
   weight = 20
 
 [[menus.main]]
   name = "读书"
-  pageRef = "/categories/读书"
+  pageRef = "/categories/books"
   weight = 30
 
   [[menus.main]]
   name = "网球"
-  pageRef = "/categories/网球"
+  pageRef = "/categories/tennis"
   weight = 40

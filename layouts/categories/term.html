@@ -1,0 +1,31 @@
+
+{{ define "main" }}
+<content>
+
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Content }}
+    <div class="category-description">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  <ul class="blog-posts">
+    {{ range .Pages.ByDate.Reverse }}
+    <li>
+      <span>
+        <i>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format (default "2006-01-02" $.Site.Params.dateFormat) }}
+          </time>
+        </i>
+      </span>
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+
+</content>
+{{ end }}

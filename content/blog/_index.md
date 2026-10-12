@@ -1,7 +1,5 @@
-'EOF'
 +++
-title = "随笔"
+title = "全部随笔"
 menu = "main"
 weight = 2
 +++
-EOF

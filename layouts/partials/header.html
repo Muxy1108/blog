@@ -1,0 +1,57 @@
+
+<div class="bear-header-top">
+
+  <!-- 网站标题 -->
+  <a href="{{ "" | relURL }}" class="title">
+    <h2>{{ .Site.Title }}</h2>
+  </a>
+
+  <!-- 明暗模式切换 -->
+  <button
+    id="theme-toggle"
+    type="button"
+    aria-label="切换明暗模式"
+    title="切换明暗模式"
+  >
+    <!-- 月亮：日间显示 -->
+    <svg
+      class="theme-icon icon-moon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M20.985 12.486A9 9 0 0 1 11.514 3.015a9 9 0 1 0 9.471 9.471Z"/>
+    </svg>
+
+    <!-- 太阳：夜间显示 -->
+    <svg
+      class="theme-icon icon-sun"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="4"/>
+      <path d="
+        M12 2v2 M12 20v2
+        M4.93 4.93l1.42 1.42
+        M17.65 17.65l1.42 1.42
+        M2 12h2 M20 12h2
+        M4.93 19.07l1.42-1.42
+        M17.65 6.35l1.42-1.42
+      "/>
+    </svg>
+  </button>
+
+</div>
+
+<nav>
+  {{- partial "nav.html" . -}}
+</nav>

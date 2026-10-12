@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>电影 on Muxy的一些随笔</title>
+		<link>http://localhost:1313/blog/tags/%E7%94%B5%E5%BD%B1/</link>
+		<description>Recent content in 电影 on Muxy的一些随笔</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 24 May 2026 00:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/blog/tags/%E7%94%B5%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>恋恋风尘 随记</title>
+				<link>http://localhost:1313/blog/blog/%E6%81%8B%E6%81%8B%E9%A3%8E%E5%B0%98-%E9%9A%8F%E8%AE%B0/</link>
+				<pubDate>Sun, 24 May 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/blog/%E6%81%8B%E6%81%8B%E9%A3%8E%E5%B0%98-%E9%9A%8F%E8%AE%B0/</guid>
+				<description>&lt;p&gt;《恋恋风尘》是侯孝贤导演1986年的作品。直到今天，即使作为一个生在长在大城市的孩子，那些土路，那些风尘，那一抹深绿，仍然让我止不住流泪。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-10-12_221007_929.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

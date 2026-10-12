@@ -41,4 +41,112 @@
       margin-bottom: 0.8em;
   }
 
+  /* 日期 图片 tag不缩进 */
+
+  main > p:has(time) {
+      text-indent: 0;
+  }
+
+  main p:has(img) {
+      text-indent: 0;
+  }
+  
+   main p:has(a[href*="/tags/"]) {
+      text-indent: 0;
+  }
+
+  /* 图片左对齐 */
+  main img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 1.5em 0;
+      border-radius: 4px;
+  }
+
+  
+  /* ========== Header ========== */
+
+  .bear-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  #theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    padding: 4px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+
+    background: transparent;
+
+    color: var(--text-color);
+
+    cursor: pointer;
+  }
+
+  #theme-toggle:hover {
+    color: var(--link-color);
+  }
+
+  #theme-toggle:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
+  }
+
+  #theme-toggle .theme-icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    fill: none;
+  }
+
+  /* 月亮 */
+  :root[data-theme="light"] #theme-toggle .icon-moon {
+    display: block;
+  }
+
+  /* 太阳 */
+  :root[data-theme="dark"] #theme-toggle .icon-sun {
+    display: block;
+  }
+
+  /* ========== 手动主题配色 ========== */
+  :root[data-theme="light"] {
+    --background-color: #E9F1F4;
+    --heading-color: #20323C;
+    --text-color: #334A56;
+    --link-color: #286C86;
+    --visited-color: #286C86;
+    --blockquote-color: #617883;
+  }
+
+  :root[data-theme="dark"] {
+    --background-color: #252E39;
+    --heading-color: #F4F6F9;
+    --text-color: #DAE0E9;
+    --link-color: #A0B9DA;
+    --visited-color: #A0B9DA;
+    --blockquote-color: #A4B0BE;
+  }
+
+
 </style>
+
+<script>
+  // 主题默认跟随系统
+  document.documentElement.dataset.theme =
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+</script>

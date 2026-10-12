@@ -1,1 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on xxx</title><link>https://Muxy1108.github.io/blog/categories/</link><description>Recent content in Categories on xxx</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://Muxy1108.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>随笔</title><link>https://Muxy1108.github.io/blog/categories/%E9%9A%8F%E7%AC%94/</link><pubDate>Sun, 11 Oct 2026 00:00:00 +0800</pubDate><guid>https://Muxy1108.github.io/blog/categories/%E9%9A%8F%E7%AC%94/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Categories on Muxy的一些随笔</title>
+		<link>http://localhost:1313/blog/categories/</link>
+		<description>Recent content in Categories on Muxy的一些随笔</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>生活</title>
+				<link>http://localhost:1313/blog/categories/%E7%94%9F%E6%B4%BB/</link>
+				<pubDate>Sun, 11 Oct 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/categories/%E7%94%9F%E6%B4%BB/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>电影</title>
+				<link>http://localhost:1313/blog/categories/%E7%94%B5%E5%BD%B1/</link>
+				<pubDate>Sun, 24 May 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/categories/%E7%94%B5%E5%BD%B1/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>电影</title>
+				<link>http://localhost:1313/blog/categories/movies/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/blog/categories/movies/</guid>
+				<description>&lt;p&gt;“电影发明以后，人类的生命，比起以前延长了至少三倍。”&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>网球</title>
+				<link>http://localhost:1313/blog/categories/tennis/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/blog/categories/tennis/</guid>
+				<description>&lt;p&gt;La victoire appartient au plus opiniâtre&lt;/p&gt;&#xA;&lt;p&gt;Victory belongs to the most tenacious&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

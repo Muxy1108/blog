@@ -1,1 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on xxx</title><link>https://Muxy1108.github.io/blog/tags/</link><description>Recent content in Tags on xxx</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://Muxy1108.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>记忆</title><link>https://Muxy1108.github.io/blog/tags/%E8%AE%B0%E5%BF%86/</link><pubDate>Sun, 11 Oct 2026 00:00:00 +0800</pubDate><guid>https://Muxy1108.github.io/blog/tags/%E8%AE%B0%E5%BF%86/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Muxy的一些随笔</title>
+		<link>http://localhost:1313/blog/tags/</link>
+		<description>Recent content in Tags on Muxy的一些随笔</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>回忆</title>
+				<link>http://localhost:1313/blog/tags/%E5%9B%9E%E5%BF%86/</link>
+				<pubDate>Sun, 11 Oct 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/tags/%E5%9B%9E%E5%BF%86/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>侯孝贤</title>
+				<link>http://localhost:1313/blog/tags/%E4%BE%AF%E5%AD%9D%E8%B4%A4/</link>
+				<pubDate>Sun, 24 May 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/tags/%E4%BE%AF%E5%AD%9D%E8%B4%A4/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>电影</title>
+				<link>http://localhost:1313/blog/tags/%E7%94%B5%E5%BD%B1/</link>
+				<pubDate>Sun, 24 May 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/tags/%E7%94%B5%E5%BD%B1/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>歌</title>
+				<link>http://localhost:1313/blog/tags/%E6%AD%8C/</link>
+				<pubDate>Sat, 07 Mar 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/tags/%E6%AD%8C/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
