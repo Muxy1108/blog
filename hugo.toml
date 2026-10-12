@@ -2,7 +2,7 @@ baseURL = "https://Muxy1108.github.io/blog/"
 languageCode = "zh-CN"
 timeZone = "Asia/Shanghai"
 
-title = "Muxy的一些随笔"
+title = "Muxy的随笔"
 theme = "hugo-bearblog"
 
 [params]

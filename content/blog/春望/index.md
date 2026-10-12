@@ -4,7 +4,7 @@ date: 2026-03-07
 draft: false
 
 categories:
-  - 生活
+  - life
 
 tags:
   - 回忆

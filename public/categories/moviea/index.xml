@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Moviea on Muxy的一些随笔</title>
+		<link>http://localhost:1313/blog/categories/moviea/</link>
+		<description>Recent content in Moviea on Muxy的一些随笔</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 03 May 2026 00:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/blog/categories/moviea/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>La vie en rose</title>
+				<link>http://localhost:1313/blog/blog/la-vie-en-rose/</link>
+				<pubDate>Sun, 03 May 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/blog/la-vie-en-rose/</guid>
+				<description>&lt;p&gt;“Non! Rien de rien.&lt;/p&gt;&#xA;&lt;p&gt;Non, je ne regrette rien…”&lt;/p&gt;&#xA;&lt;p&gt;明亮的歌声响起，在人生的最后时刻，那个高歌“Non, je ne regrette rien”的女人，回首一生时，又真的如歌中那样坚定吗？&lt;/p&gt;&#xA;&lt;p&gt;Édith Piaf对你来说也许是一个陌生的名字，但下面这几首歌，你或许有所耳闻：La Foule, Non, je ne regrette rien, La Vie en rose&amp;hellip; 上周在法语课上，她的歌声响起时，我仿佛被什么击中了。那种声音绝非来自后天的训练与传承，而是上天赐予的礼物。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

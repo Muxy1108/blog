@@ -5,14 +5,14 @@
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>侯孝贤 | Muxy的一些随笔</title>
+<title>侯孝贤 | Muxy的随笔</title>
 <meta name="title" content="侯孝贤" />
 <meta name="description" content="xxxxxxx" />
-<meta name="keywords" content="生活,电影,侯孝贤,回忆,歌,电影," />
+<meta name="keywords" content="books,life,movies,tennis,ai生成,人,侯孝贤,回忆,杨德昌,歌,江湖,电影,网球," />
 
 
 <meta property="og:url" content="http://localhost:1313/blog/tags/%E4%BE%AF%E5%AD%9D%E8%B4%A4/">
-	<meta property="og:site_name" content="Muxy的一些随笔">
+	<meta property="og:site_name" content="Muxy的随笔">
 	<meta property="og:title" content="侯孝贤">
 	<meta property="og:description" content="xxxxxxx">
 	<meta property="og:locale" content="zh_CN">
@@ -34,7 +34,7 @@
 	<meta itemprop="dateModified" content="2026-05-24T00:00:00+08:00">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/tags/%E4%BE%AF%E5%AD%9D%E8%B4%A4/index.xml" title="Muxy的一些随笔" />
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/tags/%E4%BE%AF%E5%AD%9D%E8%B4%A4/index.xml" title="Muxy的随笔" />
   <style>
   :root {
     --width: 720px;
@@ -206,7 +206,7 @@
     --font-scale: 17px;
 
      
-    --background-color: #E9F1F4;
+    --background-color: #c9e0e8;
     --heading-color: #20323C;
     --text-color: #334A56;
     --link-color: #286C86;
@@ -260,22 +260,166 @@
       border-radius: 4px;
   }
 
+   
+  main p.post-count {
+      text-indent: 0;
+  }
+
+  main p.post-count {
+    text-indent: 0;
+    margin-top: 1.5em;
+}
+  
+   
+
+  .bear-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  #theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    padding: 4px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+
+    background: transparent;
+
+    color: var(--text-color);
+
+    cursor: pointer;
+  }
+
+  #theme-toggle:hover {
+    color: var(--link-color);
+  }
+
+  #theme-toggle:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
+  }
+
+  #theme-toggle .theme-icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    fill: none;
+  }
+
+   
+  :root[data-theme="light"] #theme-toggle .icon-moon {
+    display: block;
+  }
+
+   
+  :root[data-theme="dark"] #theme-toggle .icon-sun {
+    display: block;
+  }
+
+   
+  :root[data-theme="light"] {
+    --background-color: #c9e0e8;
+    --heading-color: #20323C;
+    --text-color: #334A56;
+    --link-color: #286C86;
+    --visited-color: #286C86;
+    --blockquote-color: #617883;
+  }
+
+  :root[data-theme="dark"] {
+    --background-color: #252E39;
+    --heading-color: #F4F6F9;
+    --text-color: #DAE0E9;
+    --link-color: #A0B9DA;
+    --visited-color: #A0B9DA;
+    --blockquote-color: #A4B0BE;
+  }
+
 
 </style>
+
+<script>
+  
+  document.documentElement.dataset.theme =
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+</script>
 </head>
 
 <body>
-  <header><a href="/blog/" class="title">
-  <h2>Muxy的一些随笔</h2>
-</a>
-<nav>
-<a href="/blog/blog/">全部随笔</a>
+  <header>
+<div class="bear-header-top">
 
-<a href="">生活</a>
+  
+  <a href="/blog/" class="title">
+    <h2>Muxy的随笔</h2>
+  </a>
+
+  
+  <button
+    id="theme-toggle"
+    type="button"
+    aria-label="切换明暗模式"
+    title="切换明暗模式"
+  >
+    
+    <svg
+      class="theme-icon icon-moon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M20.985 12.486A9 9 0 0 1 11.514 3.015a9 9 0 1 0 9.471 9.471Z"/>
+    </svg>
+
+    
+    <svg
+      class="theme-icon icon-sun"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="4"/>
+      <path d="
+        M12 2v2 M12 20v2
+        M4.93 4.93l1.42 1.42
+        M17.65 17.65l1.42 1.42
+        M2 12h2 M20 12h2
+        M4.93 19.07l1.42-1.42
+        M17.65 6.35l1.42-1.42
+      "/>
+    </svg>
+  </button>
+
+</div>
+
+<nav>
+<a href="/blog/all/">全部随笔</a>
+
+<a href="/blog/categories/life/">生活</a>
 
 <a href="/blog/categories/movies/">电影</a>
 
-<a href="">读书</a>
+<a href="/blog/categories/books/">读书</a>
 
 <a href="/blog/categories/tennis/">网球</a>
 
@@ -311,6 +455,36 @@
 </footer>
 
   
+<script>
+  (() => {
+    const button = document.getElementById("theme-toggle");
+    const root = document.documentElement;
+
+    if (!button) return;
+
+    function updateLabel() {
+      const isDark = root.dataset.theme === "dark";
+
+      const label = isDark
+        ? "switch to light"
+        : "switch to dark";
+
+      button.setAttribute("aria-label", label);
+      button.setAttribute("title", label);
+    }
+
+    button.addEventListener("click", () => {
+      const current = root.dataset.theme;
+
+      root.dataset.theme =
+        current === "dark" ? "light" : "dark";
+
+      updateLabel();
+    });
+
+    updateLabel();
+  })();
+</script>
 </body>
 
 </html>

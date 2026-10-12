@@ -4,7 +4,7 @@ date: 2026-05-24
 draft: false
 
 categories:
-  - 电影
+  - movies
 
 tags:
   - 电影
