@@ -33,8 +33,6 @@ Victory belongs to the most tenacious">
 	<meta itemprop="name" content="网球">
 	<meta itemprop="description" content="La victoire appartient au plus opiniâtre
 Victory belongs to the most tenacious">
-	<meta itemprop="datePublished" content="2026-06-09T00:00:00+08:00">
-	<meta itemprop="dateModified" content="2026-06-09T00:00:00+08:00">
 	<meta itemprop="wordCount" content="12">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -363,13 +361,26 @@ Victory belongs to the most tenacious">
 
 </style>
 
+
 <script>
-  
+  const systemTheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches ? "dark" : "light";
+
+  let savedTheme = null;
+
+  try {
+    savedTheme = sessionStorage.getItem("bear-theme");
+  } catch (e) {
+    
+  }
+
   document.documentElement.dataset.theme =
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    savedTheme === "light" || savedTheme === "dark"
+      ? savedTheme
+      : systemTheme;
 </script>
+
 </head>
 
 <body>
@@ -498,10 +509,17 @@ Victory belongs to the most tenacious">
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

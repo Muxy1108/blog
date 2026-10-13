@@ -30,8 +30,6 @@
 
 	<meta itemprop="name" content="电影">
 	<meta itemprop="description" content="电影发明以后，人类的生命，比起以前延长了至少三倍。">
-	<meta itemprop="datePublished" content="2026-05-24T00:00:00+08:00">
-	<meta itemprop="dateModified" content="2026-05-24T00:00:00+08:00">
 	<meta itemprop="wordCount" content="1">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -360,13 +358,26 @@
 
 </style>
 
+
 <script>
-  
+  const systemTheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches ? "dark" : "light";
+
+  let savedTheme = null;
+
+  try {
+    savedTheme = sessionStorage.getItem("bear-theme");
+  } catch (e) {
+    
+  }
+
   document.documentElement.dataset.theme =
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    savedTheme === "light" || savedTheme === "dark"
+      ? savedTheme
+      : systemTheme;
 </script>
+
 </head>
 
 <body>
@@ -507,10 +518,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

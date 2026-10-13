@@ -18,10 +18,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

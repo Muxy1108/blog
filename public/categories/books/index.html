@@ -30,8 +30,6 @@
 
 	<meta itemprop="name" content="读书">
 	<meta itemprop="description" content="以有崖求无崖，殆哉矣。">
-	<meta itemprop="datePublished" content="2026-09-12T00:00:00+08:00">
-	<meta itemprop="dateModified" content="2026-09-12T00:00:00+08:00">
 	<meta itemprop="wordCount" content="1">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -360,13 +358,26 @@
 
 </style>
 
+
 <script>
-  
+  const systemTheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches ? "dark" : "light";
+
+  let savedTheme = null;
+
+  try {
+    savedTheme = sessionStorage.getItem("bear-theme");
+  } catch (e) {
+    
+  }
+
   document.documentElement.dataset.theme =
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    savedTheme === "light" || savedTheme === "dark"
+      ? savedTheme
+      : systemTheme;
 </script>
+
 </head>
 
 <body>
@@ -507,10 +518,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

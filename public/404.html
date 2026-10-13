@@ -356,13 +356,26 @@
 
 </style>
 
+
 <script>
-  
+  const systemTheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches ? "dark" : "light";
+
+  let savedTheme = null;
+
+  try {
+    savedTheme = sessionStorage.getItem("bear-theme");
+  } catch (e) {
+    
+  }
+
   document.documentElement.dataset.theme =
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    savedTheme === "light" || savedTheme === "dark"
+      ? savedTheme
+      : systemTheme;
 </script>
+
 </head>
 
 <body>
@@ -461,10 +474,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

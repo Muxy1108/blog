@@ -163,10 +163,23 @@
 
 </style>
 
+
 <script>
-  // 主题默认跟随系统
+  const systemTheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches ? "dark" : "light";
+
+  let savedTheme = null;
+
+  try {
+    savedTheme = sessionStorage.getItem("bear-theme");
+  } catch (e) {
+    // 跟随系统
+  }
+
   document.documentElement.dataset.theme =
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    savedTheme === "light" || savedTheme === "dark"
+      ? savedTheme
+      : systemTheme;
 </script>
+
