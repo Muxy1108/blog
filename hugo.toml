@@ -30,3 +30,6 @@ theme = "hugo-bearblog"
   name = "网球"
   pageRef = "/categories/tennis"
   weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true

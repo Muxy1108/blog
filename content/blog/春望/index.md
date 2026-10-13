@@ -1,6 +1,7 @@
 ---
 title: "春望"
 date: 2026-03-07
+location: 深圳
 draft: false
 
 categories:

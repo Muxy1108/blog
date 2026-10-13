@@ -1,6 +1,7 @@
 ---
 title: "La vie en rose"
 date: 2026-05-03
+location: 深圳
 draft: false
 
 categories:

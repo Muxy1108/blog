@@ -307,6 +307,17 @@
     text-indent: 0;
     margin-top: 1.5em;
 }
+
+   
+  main p.post-meta {
+      text-indent: 0;
+  }
+
+  .post-meta {
+      font-family: var(--font-main);
+      font-size: 0.9em;
+      color: var(--text-color);
+  }
   
    
 
@@ -466,13 +477,19 @@
   <main>
 
 <h1>我偏要勉强</h1>
-<p>
-  <i>
-    <time datetime='2026-09-12'>
-      2026-09-12
-    </time>
-  </i>
+
+<p class="post-meta">
+  <time datetime="2026-09-12">
+    2026-09-12
+  </time>
+
+  
+    <span class="post-location">
+      · 于 深圳
+    </span>
+  
 </p>
+
 
 <content>
   <p>高中时，曾沉迷于金庸的武侠世界。“飞雪连天射白鹿，笑书神侠倚碧鸳”，我是初中就晓得的；那时候金庸老爷子去世，班主任让我们一笔一划写在笔记本上的，可惜那时候不懂。直到高中，才飞一般的读了其中前十二部，只剩押尾两部《碧血剑》和《鸳鸯刀》没读；直至今日，这仅剩的进度我还是没有补上。侠客的年代，毕竟是远去了。</p>

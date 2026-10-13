@@ -326,6 +326,17 @@ Non, je ne regrette rien…”
     text-indent: 0;
     margin-top: 1.5em;
 }
+
+   
+  main p.post-meta {
+      text-indent: 0;
+  }
+
+  .post-meta {
+      font-family: var(--font-main);
+      font-size: 0.9em;
+      color: var(--text-color);
+  }
   
    
 
@@ -485,13 +496,19 @@ Non, je ne regrette rien…”
   <main>
 
 <h1>La vie en rose</h1>
-<p>
-  <i>
-    <time datetime='2026-05-03'>
-      2026-05-03
-    </time>
-  </i>
+
+<p class="post-meta">
+  <time datetime="2026-05-03">
+    2026-05-03
+  </time>
+
+  
+    <span class="post-location">
+      · 于 深圳
+    </span>
+  
 </p>
+
 
 <content>
   <p>“Non! Rien de rien.</p>

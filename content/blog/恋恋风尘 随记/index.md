@@ -1,6 +1,7 @@
 ---
 title: "恋恋风尘 随记"
 date: 2026-05-24
+location: 深圳
 draft: false
 
 categories:

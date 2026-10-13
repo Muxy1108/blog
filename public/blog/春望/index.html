@@ -281,6 +281,17 @@
     text-indent: 0;
     margin-top: 1.5em;
 }
+
+   
+  main p.post-meta {
+      text-indent: 0;
+  }
+
+  .post-meta {
+      font-family: var(--font-main);
+      font-size: 0.9em;
+      color: var(--text-color);
+  }
   
    
 
@@ -440,13 +451,19 @@
   <main>
 
 <h1>春望</h1>
-<p>
-  <i>
-    <time datetime='2026-03-07'>
-      2026-03-07
-    </time>
-  </i>
+
+<p class="post-meta">
+  <time datetime="2026-03-07">
+    2026-03-07
+  </time>
+
+  
+    <span class="post-location">
+      · 于 深圳
+    </span>
+  
 </p>
+
 
 <content>
   <p><img src="1.jpg" alt="南开校训墙"></p>

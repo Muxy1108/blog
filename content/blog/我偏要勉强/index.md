@@ -1,6 +1,7 @@
 ---
 title: "我偏要勉强"
 date: 2026-09-12
+location: 深圳
 draft: false
 
 categories:

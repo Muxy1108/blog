@@ -545,6 +545,17 @@
     text-indent: 0;
     margin-top: 1.5em;
 }
+
+   
+  main p.post-meta {
+      text-indent: 0;
+  }
+
+  .post-meta {
+      font-family: var(--font-main);
+      font-size: 0.9em;
+      color: var(--text-color);
+  }
   
    
 
@@ -704,13 +715,19 @@
   <main>
 
 <h1>江洋大盗</h1>
-<p>
-  <i>
-    <time datetime='2025-03-29'>
-      2025-03-29
-    </time>
-  </i>
+
+<p class="post-meta">
+  <time datetime="2025-03-29">
+    2025-03-29
+  </time>
+
+  
+    <span class="post-location">
+      · 于 深圳
+    </span>
+  
 </p>
+
 
 <content>
   <p>原谅我用三毛的散文开头:</p>
