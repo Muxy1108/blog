@@ -8,7 +8,7 @@
 <title>回忆 | Muxy的随笔</title>
 <meta name="title" content="回忆" />
 <meta name="description" content="xxxxxxx" />
-<meta name="keywords" content="books,life,movies,tennis,ai生成,人,侯孝贤,医学,回忆,杨德昌,歌,江湖,电影,网球," />
+<meta name="keywords" content="books,life,movies,tennis,ai生成,人,侯孝贤,医学,回忆,杨德昌,歌,江湖,网球," />
 
 
 <meta property="og:url" content="http://localhost:1313/blog/tags/%E5%9B%9E%E5%BF%86/">
@@ -194,7 +194,6 @@
   }
 
 </style>
-
 <style>
   :root {
      
@@ -228,6 +227,7 @@
 
   body {
     line-height: 1.85;
+    font-weight: 500;
   }
 
    
@@ -279,6 +279,17 @@
       font-family: var(--font-main);
       font-size: 0.9em;
       color: var(--text-color);
+  }
+
+     
+  main blockquote {
+      font-style: normal;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  main blockquote p {
+      text-indent: 0;
   }
   
    
@@ -520,10 +531,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

@@ -8,7 +8,6 @@ categories:
   - tennis
 
 tags:
-  - 网球
   - 人
   - AI生成
 ---

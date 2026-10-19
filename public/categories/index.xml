@@ -10,22 +10,29 @@
 		
 		
 		
-			<lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0800</lastBuildDate>
+			<lastBuildDate>Sat, 17 Oct 2026 00:00:00 +0800</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>电影</title>
+				<link>http://localhost:1313/blog/categories/movies/</link>
+				<pubDate>Sat, 17 Oct 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/categories/movies/</guid>
+				<description>&lt;p&gt;电影发明以后，人类的生命，比起以前延长了至少三倍。&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>生活</title>
 				<link>http://localhost:1313/blog/categories/life/</link>
 				<pubDate>Sun, 11 Oct 2026 00:00:00 +0800</pubDate>
 				<guid>http://localhost:1313/blog/categories/life/</guid>
-				<description>&lt;p&gt;亲戚或余悲，他人亦已歌。&lt;/p&gt;</description>
+				<description></description>
 			</item>
 			<item>
 				<title>读书</title>
 				<link>http://localhost:1313/blog/categories/books/</link>
 				<pubDate>Sat, 12 Sep 2026 00:00:00 +0800</pubDate>
 				<guid>http://localhost:1313/blog/categories/books/</guid>
-				<description>&lt;p&gt;以有崖求无崖，殆哉矣。&lt;/p&gt;</description>
+				<description></description>
 			</item>
 			<item>
 				<title>网球</title>
@@ -33,13 +40,6 @@
 				<pubDate>Tue, 09 Jun 2026 00:00:00 +0800</pubDate>
 				<guid>http://localhost:1313/blog/categories/tennis/</guid>
 				<description>&lt;p&gt;La victoire appartient au plus opiniâtre&lt;/p&gt;&#xA;&lt;p&gt;Victory belongs to the most tenacious&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>电影</title>
-				<link>http://localhost:1313/blog/categories/movies/</link>
-				<pubDate>Sun, 24 May 2026 00:00:00 +0800</pubDate>
-				<guid>http://localhost:1313/blog/categories/movies/</guid>
-				<description>&lt;p&gt;电影发明以后，人类的生命，比起以前延长了至少三倍。&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

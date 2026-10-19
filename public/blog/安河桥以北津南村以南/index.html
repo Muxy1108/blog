@@ -280,7 +280,6 @@
   }
 
 </style>
-
 <style>
   :root {
      
@@ -314,6 +313,7 @@
 
   body {
     line-height: 1.85;
+    font-weight: 500;
   }
 
    
@@ -365,6 +365,17 @@
       font-family: var(--font-main);
       font-size: 0.9em;
       color: var(--text-color);
+  }
+
+     
+  main blockquote {
+      font-style: normal;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  main blockquote p {
+      text-indent: 0;
   }
   
    
@@ -612,10 +623,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

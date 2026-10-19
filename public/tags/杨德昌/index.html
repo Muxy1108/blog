@@ -8,7 +8,7 @@
 <title>杨德昌 | Muxy的随笔</title>
 <meta name="title" content="杨德昌" />
 <meta name="description" content="xxxxxxx" />
-<meta name="keywords" content="books,life,movies,tennis,ai生成,人,侯孝贤,医学,回忆,杨德昌,歌,江湖,电影,网球," />
+<meta name="keywords" content="books,life,movies,tennis,ai生成,人,侯孝贤,医学,回忆,杨德昌,歌,江湖,网球," />
 
 
 <meta property="og:url" content="http://localhost:1313/blog/tags/%E6%9D%A8%E5%BE%B7%E6%98%8C/">
@@ -30,8 +30,8 @@
 
 	<meta itemprop="name" content="杨德昌">
 	<meta itemprop="description" content="xxxxxxx">
-	<meta itemprop="datePublished" content="2026-09-12T00:00:00+08:00">
-	<meta itemprop="dateModified" content="2026-09-12T00:00:00+08:00">
+	<meta itemprop="datePublished" content="2026-10-17T00:00:00+08:00">
+	<meta itemprop="dateModified" content="2026-10-17T00:00:00+08:00">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/tags/%E6%9D%A8%E5%BE%B7%E6%98%8C/index.xml" title="Muxy的随笔" />
@@ -194,7 +194,6 @@
   }
 
 </style>
-
 <style>
   :root {
      
@@ -228,6 +227,7 @@
 
   body {
     line-height: 1.85;
+    font-weight: 500;
   }
 
    
@@ -279,6 +279,17 @@
       font-family: var(--font-main);
       font-size: 0.9em;
       color: var(--text-color);
+  }
+
+     
+  main blockquote {
+      font-style: normal;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  main blockquote p {
+      text-indent: 0;
   }
   
    
@@ -462,6 +473,17 @@
     <li>
       <span>
         <i>
+          <time datetime='2026-10-17'>
+            2026-10-17
+          </time>
+        </i>
+      </span>
+      <a href="http://localhost:1313/blog/blog/%E7%89%AF%E5%B2%AD%E8%A1%97%E5%B0%91%E5%B9%B4%E6%9D%80%E4%BA%BA%E4%BA%8B%E4%BB%B6/">牯岭街少年杀人事件</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
           <time datetime='2026-09-12'>
             2026-09-12
           </time>
@@ -498,10 +520,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });

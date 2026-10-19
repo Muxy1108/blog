@@ -8,7 +8,6 @@ categories:
   - movies
 
 tags:
-  - 电影
   - 侯孝贤
 ---
 

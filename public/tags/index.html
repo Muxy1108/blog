@@ -8,7 +8,7 @@
 <title>Tags | Muxy的随笔</title>
 <meta name="title" content="Tags" />
 <meta name="description" content="xxxxxxx" />
-<meta name="keywords" content="books,life,movies,tennis,ai生成,人,侯孝贤,医学,回忆,杨德昌,歌,江湖,电影,网球," />
+<meta name="keywords" content="books,life,movies,tennis,ai生成,人,侯孝贤,医学,回忆,杨德昌,歌,江湖," />
 
 
 <meta property="og:url" content="http://localhost:1313/blog/tags/">
@@ -194,7 +194,6 @@
   }
 
 </style>
-
 <style>
   :root {
      
@@ -228,6 +227,7 @@
 
   body {
     line-height: 1.85;
+    font-weight: 500;
   }
 
    
@@ -279,6 +279,17 @@
       font-family: var(--font-main);
       font-size: 0.9em;
       color: var(--text-color);
+  }
+
+     
+  main blockquote {
+      font-style: normal;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  main blockquote p {
+      text-indent: 0;
   }
   
    
@@ -517,34 +528,12 @@
     <li>
       <span>
         <i>
-          <time datetime='2026-06-09'>
-            2026-06-09
-          </time>
-        </i>
-      </span>
-      <a href="http://localhost:1313/blog/tags/%E7%BD%91%E7%90%83/">网球</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
           <time datetime='2026-05-24'>
             2026-05-24
           </time>
         </i>
       </span>
       <a href="http://localhost:1313/blog/tags/%E4%BE%AF%E5%AD%9D%E8%B4%A4/">侯孝贤</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2026-05-24'>
-            2026-05-24
-          </time>
-        </i>
-      </span>
-      <a href="http://localhost:1313/blog/tags/%E7%94%B5%E5%BD%B1/">电影</a>
     </li>
     
     <li>
@@ -567,6 +556,17 @@
         </i>
       </span>
       <a href="http://localhost:1313/blog/tags/%E5%8C%BB%E5%AD%A6/">医学</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='0001-01-01'>
+            0001-01-01
+          </time>
+        </i>
+      </span>
+      <a href="http://localhost:1313/blog/tags/%E7%BD%91%E7%90%83/">网球</a>
     </li>
     
   </ul>
@@ -597,10 +597,17 @@
     }
 
     button.addEventListener("click", () => {
-      const current = root.dataset.theme;
+      const nextTheme = root.dataset.theme === "dark"
+        ? "light"
+        : "dark";
 
-      root.dataset.theme =
-        current === "dark" ? "light" : "dark";
+      root.dataset.theme = nextTheme;
+
+      try {
+        sessionStorage.setItem("bear-theme", nextTheme);
+      } catch (e) {
+
+      }
 
       updateLabel();
     });
