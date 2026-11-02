@@ -27,4 +27,12 @@ tags:
 
 ![](4.png)
 
+比起真正的杰作，还差得远：  
+
+Vous n’avez pas à me dire qui vous êtes. Ce n’est pas ma maison, c’est la maison de Jésus-Christ. Cette porte ne demande pas à celui qui entre s’il a un nom, mais s’il a une souffrance. Vous souffrez, vous avez faim et soif, entrez et demeurez. Ne me remerciez pas, ne me dites pas que je vous reçois chez moi. Nul n’est chez lui si ce n’est celui qui a besoin d’un asile. Je vous dis, passant, que c’est moins ma maison que la vôtre. Tout ce qui est ici est à vous. Pourquoi aurais-je besoin de savoir votre nom ? D’ailleurs, avant que vous me le disiez, j’en sais déjà un.  
+L’homme ouvrit les yeux, stupéfait:  
+— Ah! vous savez comment je m’appelle?  
+— Oui, dit l’évêque, vous vous appelez mon frère.  
+Je vous reçois non pour savoir qui vous êtes, mais parce que vous souffrez.  
+
 我一直不清楚结束一部电影的最坏方式是什么。看完这部电影，我恍然大悟，把一切归结为宗教，书也好，电影也好，就无可挽回的毁掉了。从比萨斜塔上抛下一个铅球，试图用一块玻璃————或者是纯粹的空气来接住，尤其做这个实验的还是科学家。这是不可理喻的。
