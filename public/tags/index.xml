@@ -10,9 +10,23 @@
 		
 		
 		
-			<lastBuildDate>Sat, 17 Oct 2026 00:00:00 +0800</lastBuildDate>
+			<lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0800</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>阎连科</title>
+				<link>http://localhost:1313/blog/tags/%E9%98%8E%E8%BF%9E%E7%A7%91/</link>
+				<pubDate>Fri, 06 Nov 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/tags/%E9%98%8E%E8%BF%9E%E7%A7%91/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>艺术</title>
+				<link>http://localhost:1313/blog/tags/%E8%89%BA%E6%9C%AF/</link>
+				<pubDate>Sat, 24 Oct 2026 00:00:00 +0800</pubDate>
+				<guid>http://localhost:1313/blog/tags/%E8%89%BA%E6%9C%AF/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>杨德昌</title>
 				<link>http://localhost:1313/blog/tags/%E6%9D%A8%E5%BE%B7%E6%98%8C/</link>
